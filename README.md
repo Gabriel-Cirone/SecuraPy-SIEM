@@ -205,6 +205,24 @@ python -m pytest testes/ -v
 
 
 
+## Observações
+
+Para executar cada comando no meu sistema Ubuntu, eu precisei criar um ambiente virtual no VS Code para rodar os arquivos no terminal, com os seguintes comandos:
+
+## Criar um ambiente virtual. No terminal do VS Code:
+
+```bash
+# python3 -m venv venv
+```
+
+## Ativar o ambiente:
+
+```bash
+# source venv/bin/activate
+```
+
+Toda vez que abrir um novo terminal, precisará ativar o venv de novo com source venv/bin/activate. Você verá (venv) no início da linha quando estiver ativo.
+
 ## Demonstração em vídeo
 
 [Link do vídeo enviado pelo Teams]
