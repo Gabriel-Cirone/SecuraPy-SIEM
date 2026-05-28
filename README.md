@@ -178,25 +178,25 @@ python -m pytest testes/ -v
 
 ## Divisão de tarefas
 
-### [Nome — Pessoa A]
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Pessoa A
+- **Módulos:** lista
+- **O que fez:** descreva em 2-3 frases
+- **Dificuldades:** o que foi mais difícil e como resolveu
 
-### [Nome — Enzo Parada Seixas]
-- **Módulos:** [Módulo: 2 e edição do vídeo]
-- **O que fez:** [Desenvolvi o módulo de detecção de ameaças e regras configuráveis em JSON.]
-- **Dificuldades:** [Estruturar a lógica de detecção das regras de forma flexível, permitindo que o sistema analisasse diferentes tipos de eventos sem precisar alterar o código principal]
+### Nome — Enzo Parada Seixas
+- **Módulos:** Módulo: 2 e edição do vídeo
+- **O que fez:** Desenvolvi o módulo de detecção de ameaças e regras configuráveis em JSON.
+- **Dificuldades:** Estruturar a lógica de detecção das regras de forma flexível, permitindo que o sistema analisasse diferentes tipos de eventos sem precisar alterar o código principal.
 
-### [Nome — Pessoa C]
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Pessoa C
+- **Módulos:** lista
+- **O que fez:** descreva em 2-3 frases
+- **Dificuldades:** o que foi mais difícil e como resolveu
 
-### [Nome — Pessoa D]
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Pessoa D
+- **Módulos:** lista
+- **O que fez:** descreva em 2-3 frases
+- **Dificuldades:** o que foi mais difícil e como resolveu
 
 ### Nome — Gabriel Cirone Galter
 - **Módulos:** Módulo 5 e execução de arquivos
