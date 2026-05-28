@@ -138,28 +138,25 @@ securaPy/
 
 ---
 
-## Para a entrega: preencha as seções abaixo
-
-> **IMPORTANTE:** Antes de entregar, substitua tudo abaixo deste ponto
-> com as informações do seu grupo.
-
----
-
-# SecuraPy SIEM — [Nome do Grupo]
+# SecuraPy SIEM — Room 4
 
 ## Integrantes
 
 | Nome | RM | Responsabilidade |
 |------|-----|-----------------|
-| [Nome completo] | [RM] | [Módulos que implementou] |
-| [Nome completo] | [RM] | [Módulos que implementou] |
-| [Nome completo] | [RM] | [Módulos que implementou] |
-| [Nome completo] | [RM] | [Módulos que implementou] |
+| Matheus Silva Souza | RM:572335 | Módulos 1 e 6 |
+| Enzo Parada Seixas | RM:572294 | Módulo 2 |
+| João Pedro Silva Ribeiro | RM:570090 | Módulos 3 e 6 |
+| Guilherme Benjamim dos Reis | RM:573724 | Módulo 4 |
+| Gabriel Cirone Galter | RM:568717 | Módulo 5 |
 
 ## Descrição
 
-[Descreva em 2-3 parágrafos o que o sistema faz, quais problemas ele resolve
-e como os módulos se integram.]
+O SecuraPy é um SIEM simplificado, desenvolvido para coletar, analisar e correlacionar eventos de segurança de múltiplas fontes em tempo real. O sistema resolve um problema comum em ambientes corporativos: a análise manual de logs, que é lenta, propensa a erros e incapaz de detectar ataques em andamento. Com o SecuraPy, esse processo passa a ser automatizado, permitindo que a equipe de segurança identifique ameaças de forma rápida e estruturada.
+
+O sistema é composto por seis módulos integrados. O Módulo 1 lê e normaliza os arquivos de log de diferentes fontes — autenticação, firewall e acesso web. O Módulo 2 aplica regras de detecção configuráveis sobre esses eventos, gerando alertas quando algo suspeito é identificado. O Módulo 3 vai além e analisa padrões no conjunto de eventos, detectando comportamentos como tentativas de brute force e varredura de portas. O Módulo 4 transmite esses alertas em tempo real via rede para os analistas conectados. O Módulo 5 enriquece os IPs suspeitos com informações geográficas e organizacionais consultando uma API externa. E o Módulo 6 reúne tudo em um dashboard interativo no terminal, permitindo filtros, buscas e exportação de relatórios.
+
+A integração entre os módulos segue um fluxo linear e bem definido: os eventos coletados pelo Módulo 1 alimentam os módulos de detecção, que geram alertas enriquecidos pelo Módulo 5 e exibidos pelo Módulo 6. Cada módulo tem uma responsabilidade única e se comunica com os demais através de estruturas de dados padronizadas, o que torna o sistema modular, fácil de manter e preparado para evoluir.
 
 ## Como executar
 
@@ -177,39 +174,55 @@ python -m pytest testes/ -v
 
 ## Resultado dos testes
 
-```
-[Cole aqui a saída do pytest mostrando quantos testes passam]
-```
+<img width="1920" height="1048" alt="Screenshot From 2026-05-28 18-07-05" src="https://github.com/user-attachments/assets/e1c368b8-bce6-444f-9718-866d56706c2e" />
 
 ## Divisão de tarefas
 
-### [Nome — Pessoa A]
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Pessoa A
+- **Módulos:** lista
+- **O que fez:** descreva em 2-3 frases
+- **Dificuldades:** o que foi mais difícil e como resolveu
 
-### [Nome — Pessoa B]
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Enzo Parada Seixas
+- **Módulos:** Módulo: 2 e edição do vídeo
+- **O que fez:** Desenvolvi o módulo de detecção de ameaças e regras configuráveis em JSON.
+- **Dificuldades:** Estruturar a lógica de detecção das regras de forma flexível, permitindo que o sistema analisasse diferentes tipos de eventos sem precisar alterar o código principal.
 
-### [Nome — Pessoa C]
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Pessoa C
+- **Módulos:** lista
+- **O que fez:** descreva em 2-3 frases
+- **Dificuldades:** o que foi mais difícil e como resolveu
 
-### [Nome — Pessoa D] (se houver)
-- **Módulos:** [lista]
-- **O que fez:** [descreva em 2-3 frases]
-- **Dificuldades:** [o que foi mais difícil e como resolveu]
+### Nome — Pessoa D
+- **Módulos:** lista
+- **O que fez:** descreva em 2-3 frases
+- **Dificuldades:** o que foi mais difícil e como resolveu
 
-## Funcionalidades bônus implementadas
+### Nome — Gabriel Cirone Galter
+- **Módulos:** Módulo 5 e execução de arquivos
+- **O que fez:** Desenvolvi o módulo que adiciona contexto geográfico e organizacional aos IPs suspeitos, consultando a API do ipinfo.io. Implementou cache para evitar consultas repetidas e tratamento de erros de rede.
+- **Dificuldades:** O Linux bloqueou a instalação das dependências com o pip por ser um ambiente gerenciado externamente. A solução foi criar um ambiente virtual com python3 -m venv.
 
-- [ ] Correlação temporal (brute force por janela de tempo)
-- [ ] Hash de integridade dos logs (hashlib)
-- [ ] Geração automática de logs para teste
-- [ ] Criação de regras customizadas pelo menu
+
+
+## Observações
+
+Para executar cada comando no meu sistema Ubuntu, eu precisei criar um ambiente virtual no VS Code para rodar os arquivos no terminal, com os seguintes comandos:
+
+## Criar um ambiente virtual. No terminal do VS Code:
+
+```bash
+python3 -m venv venv
+```
+
+## Ativar o ambiente:
+
+```bash
+source venv/bin/activate
+```
+
+Toda vez que abrir um novo terminal, precisará ativar o venv de novo com source venv/bin/activate. Você verá (venv) no início da linha quando estiver ativo.
 
 ## Demonstração em vídeo
 
-[Link do vídeo enviado pelo Teams]
+https://fiapcom-my.sharepoint.com/:v:/g/personal/rm572294_fiap_com_br/IQAeXq_3C8JjTqN2hZyG0RMzAQBp4HpB4HIgapPkTZQQ9bM?e=4ZASiy
