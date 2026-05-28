@@ -198,7 +198,7 @@ python -m pytest testes/ -v
 - **O que fez:** descreva em 2-3 frases
 - **Dificuldades:** o que foi mais difícil e como resolveu
 
-### Nome — Gabriel Cirone Galter
+### Nome — Gabriel Cirone
 - **Módulos:** Módulo 5 e execução de arquivos
 - **O que fez:** Desenvolvi o módulo que adiciona contexto geográfico e organizacional aos IPs suspeitos, consultando a API do ipinfo.io. Implementou cache para evitar consultas repetidas e tratamento de erros de rede.
 - **Dificuldades:** O Linux bloqueou a instalação das dependências com o pip por ser um ambiente gerenciado externamente. A solução foi criar um ambiente virtual com python3 -m venv.
