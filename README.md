@@ -177,9 +177,7 @@ python -m pytest testes/ -v
 
 ## Resultado dos testes
 
-```
-[Cole aqui a saída do pytest mostrando quantos testes passam]
-```
+<img width="1920" height="1048" alt="Screenshot From 2026-05-28 18-07-05" src="https://github.com/user-attachments/assets/e1c368b8-bce6-444f-9718-866d56706c2e" />
 
 ## Divisão de tarefas
 
