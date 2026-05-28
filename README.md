@@ -212,13 +212,13 @@ Para executar cada comando no meu sistema Ubuntu, eu precisei criar um ambiente 
 ## Criar um ambiente virtual. No terminal do VS Code:
 
 ```bash
-# python3 -m venv venv
+python3 -m venv venv
 ```
 
 ## Ativar o ambiente:
 
 ```bash
-# source venv/bin/activate
+source venv/bin/activate
 ```
 
 Toda vez que abrir um novo terminal, precisará ativar o venv de novo com source venv/bin/activate. Você verá (venv) no início da linha quando estiver ativo.
