@@ -203,12 +203,7 @@ python -m pytest testes/ -v
 - **O que fez:** [descreva em 2-3 frases]
 - **Dificuldades:** [o que foi mais difícil e como resolveu]
 
-## Funcionalidades bônus implementadas
 
-- [ ] Correlação temporal (brute force por janela de tempo)
-- [ ] Hash de integridade dos logs (hashlib)
-- [ ] Geração automática de logs para teste
-- [ ] Criação de regras customizadas pelo menu
 
 ## Demonstração em vídeo
 
