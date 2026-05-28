@@ -225,4 +225,4 @@ Toda vez que abrir um novo terminal, precisará ativar o venv de novo com source
 
 ## Demonstração em vídeo
 
-[Link do vídeo enviado pelo Teams]
+https://fiapcom-my.sharepoint.com/:v:/g/personal/rm572294_fiap_com_br/IQAeXq_3C8JjTqN2hZyG0RMzAQBp4HpB4HIgapPkTZQQ9bM?e=4ZASiy
