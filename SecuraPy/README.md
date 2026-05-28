@@ -178,20 +178,20 @@ python -m pytest testes/ -v
 
 ## Divisão de tarefas
 
-### Nome — Pessoa A
-- **Módulos:** lista
-- **O que fez:** descreva em 2-3 frases
-- **Dificuldades:** o que foi mais difícil e como resolveu
-
+### Nome — Matheus Silva
+- **Módulos:** Módulos 1 e 6
+- **O que fez:** Fiz o coletor e parte do dos relatórios.
+- **Dificuldades:** Fazer o coletor se integrar com todos os outros módulos sem apresentar nenhum erro ou conflitos inesperados.
+  
 ### Nome — Enzo Parada Seixas
-- **Módulos:** Módulo: 2 e edição do vídeo
+- **Módulos:** Módulo 2 e edição do vídeo
 - **O que fez:** Desenvolvi o módulo de detecção de ameaças e regras configuráveis em JSON.
 - **Dificuldades:** Estruturar a lógica de detecção das regras de forma flexível, permitindo que o sistema analisasse diferentes tipos de eventos sem precisar alterar o código principal.
 
-### Nome — Pessoa C
-- **Módulos:** lista
-- **O que fez:** descreva em 2-3 frases
-- **Dificuldades:** o que foi mais difícil e como resolveu
+### Nome — João Pedro
+- **Módulos:** Módulos 3 e 6
+- **O que fez:** Desenvolvi um módulo de detecção de ameaças que analisa logs do sistema para identificar padrões de ataque. O módulo detecta força bruta, port scan e IPs maliciosos conhecidos, e consolida tudo em um resumo ordenado por severidade.
+- **Dificuldades:** A maior dificuldade foi rodar os testes — o projeto tinha um _init_.py na pasta que impedia o pytest de carregar o conftest.py corretamente. Resolvi adicionando a flag --import-mode=importlib no comando do pytest.
 
 ### Nome — Pessoa D
 - **Módulos:** lista
