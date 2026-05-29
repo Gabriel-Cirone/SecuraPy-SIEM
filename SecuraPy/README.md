@@ -193,10 +193,10 @@ python -m pytest testes/ -v
 - **O que fez:** Desenvolvi um módulo de detecção de ameaças que analisa logs do sistema para identificar padrões de ataque. O módulo detecta força bruta, port scan e IPs maliciosos conhecidos, e consolida tudo em um resumo ordenado por severidade.
 - **Dificuldades:** A maior dificuldade foi rodar os testes — o projeto tinha um _init_.py na pasta que impedia o pytest de carregar o conftest.py corretamente. Resolvi adicionando a flag --import-mode=importlib no comando do pytest.
 
-### Nome — Pessoa D
-- **Módulos:** lista
-- **O que fez:** descreva em 2-3 frases
-- **Dificuldades:** o que foi mais difícil e como resolveu
+### Nome — Guilherme Benjamin dos Reis
+- **Módulos:** Módulo 4
+- **O que fez:** Desenvolvi o servidor TCP que transmite alertas em tempo real para múltiplos clientes simultaneamente, com broadcast, comandos e tratamento de desconexões.
+- **Dificuldades:** Tive problemas com múltiplas threads acessando os mesmos dados ao mesmo tempo. Resolvi usando threading.Lock() para controlar o acesso concorrente.
 
 ### Nome — Gabriel Cirone
 - **Módulos:** Módulo 5 e execução de arquivos
